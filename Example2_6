@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Ex2_6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("3,6,9 Game~");
+		System.out.println("Input number between 1 to 99>>");
+		int num = sc.nextInt();
+		
+		int share = num/10;
+		int rest = num%10;
+		
+		if((share==3||share ==6|| share==9)&&(rest==3||rest==6||rest==9))
+			System.out.println("박수짝짝!");
+		else if((share==3||share==6||share==9))
+			System.out.println("박수 짝!");
+		else if(rest==3||rest==6||rest==9)
+			System.out.println("박수 짝!");
+		else
+			System.out.println("3의 배수가 아니지롱 ~ ");
+		sc.close();
+			
+	}
+
+}
