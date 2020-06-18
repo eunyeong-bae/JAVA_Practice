@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Ex2_4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Input 3 of Integers>>");
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int num3 = sc.nextInt();
+		
+		if(num3>num2 && num2>num1)
+			System.out.println("middle of value is "+num2);
+		else if(num2> num3 && num3>num1)
+			System.out.println("middle of value is "+num3);
+		else
+			System.out.println("middle of value is "+num1);
+		sc.close();
+	}
+
+}
