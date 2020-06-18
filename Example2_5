@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Ex2_5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("input 3 of integers >>");
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int num3 = sc.nextInt();
+		
+		if((num1+num2)<num3 || (num2+num3)<num1||(num1+num3)<num2)
+			System.out.println("Can't make a triangle");
+		else
+			System.out.println("It can be a triangle");
+		
+		sc.close();
+			
+	}
+
+}
