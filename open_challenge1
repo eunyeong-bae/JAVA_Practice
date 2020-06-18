@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Rock_Scissor_Paper {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("가위 바위 보 게임 시작");
+		System.out.println("철수 먼저 >>");
+		String data1 = sc.next();
+		
+		System.out.println("영희 >>");
+		String data2 = sc.next();
+		
+		if(data1.equals("가위")) {
+			if(data2.equals("가위"))
+				System.out.println("비겼다!");
+			else if(data2.equals("바위"))
+				System.out.println("영희 승리");
+			else if(data2.equals("보"))
+				System.out.println("철수 승리");
+		}
+		else if(data1.equals("바위")) {
+			if(data2.equals("바위"))
+				System.out.println("비겼다!");
+			else if(data2.equals("보"))
+				System.out.println("영희 승리");
+			else if(data2.equals("가위"))
+				System.out.println("철수 승리");
+		}
+		else if(data1.equals("보")) {
+			if(data2.equals("보"))
+				System.out.println("비겼다!");
+			else if(data2.equals("가위"))
+				System.out.println("영희 승리");
+			else if(data2.equals("바위"))
+				System.out.println("철수 승리");
+		}
+		
+		sc.close();
+	}
+
+}
